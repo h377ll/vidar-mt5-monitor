@@ -1,0 +1,91 @@
+{
+  "schema_version": "synthetic.mt5.i1.v1",
+  "account_key": ["SYNTHETIC-I1", "900001"],
+  "observed_at_utc": "2026-10-27T12:00:00Z",
+  "run_id": "rec-synthetic-i1-0001",
+  "connection": {
+    "server_connected": true,
+    "orders_complete": true,
+    "deals_complete": true,
+    "positions_complete": true
+  },
+  "orders": [
+    {
+      "account_key": ["SYNTHETIC-I1", "900001"],
+      "order_ticket": "7001",
+      "position_identifier": "6001",
+      "symbol": "SYNTHUSD",
+      "side": "buy",
+      "volume": "0.50",
+      "requested_price": "1.25000",
+      "state": "filled",
+      "server_time_msc_raw": 1793102400000
+    }
+  ],
+  "deals": [
+    {
+      "account_key": ["SYNTHETIC-I1", "900001"],
+      "deal_ticket": "8001",
+      "order_ticket": "7001",
+      "position_identifier": "6001",
+      "symbol": "SYNTHUSD",
+      "entry": "in",
+      "side": "buy",
+      "volume": "0.50",
+      "price": "1.25010",
+      "profit": "0",
+      "commission": "-0.75",
+      "swap": "0",
+      "fee": "0",
+      "server_time_msc_raw": 1793102400100
+    }
+  ],
+  "positions": [
+    {
+      "account_key": ["SYNTHETIC-I1", "900001"],
+      "position_identifier": "6001",
+      "ticket": "6101",
+      "symbol": "SYNTHUSD",
+      "side": "buy",
+      "volume": "0.50",
+      "price_open": "1.25010",
+      "price_current": "1.25100",
+      "sl": "1.24500",
+      "tp": "1.26000",
+      "swap": "0",
+      "profit": "4.50",
+      "server_time_msc_raw": 1793102400200
+    }
+  ],
+  "events": [
+    {
+      "event_type": "market.spread",
+      "native_id": "SYNTHUSD:1793102400000",
+      "payload": {
+        "symbol": "SYNTHUSD",
+        "bid": "1.25000",
+        "ask": "1.25010",
+        "spread_points": "10",
+        "symbol_spec_hash": "sha256:synthetic-spec"
+      }
+    },
+    {
+      "event_type": "account.rollover",
+      "native_id": "2026-10-27",
+      "payload": {
+        "server_date": "2026-10-27",
+        "rollover_kind": "daily_boundary_observed"
+      }
+    },
+    {
+      "event_type": "deal.swap",
+      "native_id": "8002",
+      "payload": {
+        "deal_ticket": "8002",
+        "position_identifier": "6001",
+        "swap": "-1.25",
+        "currency": "USD"
+      }
+    }
+  ]
+}

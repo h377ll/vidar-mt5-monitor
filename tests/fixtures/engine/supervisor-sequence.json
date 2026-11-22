@@ -1,0 +1,212 @@
+{
+  "account_key": ["SYNTHETIC-DEMO", "900001"],
+  "observer": {
+    "source": "synthetic-ea",
+    "stream": "boot-20261030",
+    "events": [
+      {
+        "seq": 1,
+        "kind": "transaction",
+        "payload": {
+          "transaction_type": 6,
+          "order_id": "1001",
+          "deal_id": "2001",
+          "position_ticket": "6001",
+          "symbol": "SYNTHUSD",
+          "volume": "0.10",
+          "price": "1.10010",
+          "sl": "1.09510",
+          "tp": "1.11010"
+        }
+      },
+      {
+        "seq": 2,
+        "kind": "snapshot",
+        "payload": {
+          "connected": true,
+          "complete": true,
+          "positions": [
+            {
+              "position_id": "6001",
+              "symbol": "SYNTHUSD",
+              "type": "buy",
+              "volume": 0.1,
+              "price_open": 1.10010,
+              "sl": 1.09510,
+              "tp": 1.11010
+            }
+          ]
+        }
+      },
+      {
+        "seq": 3,
+        "kind": "transaction",
+        "payload": {
+          "transaction_type": 3,
+          "order_id": "0",
+          "deal_id": "0",
+          "position_ticket": "6001",
+          "symbol": "SYNTHUSD",
+          "volume": "0.10",
+          "price": "1.10410",
+          "sl": "1.09710",
+          "tp": "1.11010"
+        }
+      },
+      {
+        "seq": 4,
+        "kind": "transaction",
+        "payload": {
+          "transaction_type": 6,
+          "order_id": "1002",
+          "deal_id": "2002",
+          "position_ticket": "6001",
+          "symbol": "SYNTHUSD",
+          "volume": "0.10",
+          "price": "1.10600",
+          "sl": "1.09710",
+          "tp": "1.11010"
+        }
+      }
+    ]
+  },
+  "symbol_specs": {
+    "SYNTHUSD": {
+      "tick_size": "0.00010",
+      "tick_value_loss": "10",
+      "tick_value_profit": "10",
+      "currency": "USD",
+      "spec_hash": "sha256:synthetic-contract-v1"
+    }
+  },
+  "cycles": [
+    {
+      "cycle_id": "cycle-1-open",
+      "observed_at_utc": "2026-10-30T19:00:00Z",
+      "connection": {
+        "server_connected": true,
+        "orders_complete": true,
+        "deals_complete": true,
+        "positions_complete": true
+      },
+      "account_state": {
+        "currency": "USD",
+        "balance": "10000",
+        "equity": "10000",
+        "capital_basis": "equity",
+        "cashflows_resolved": true
+      },
+      "orders": [
+        {"order_ticket": "1001", "position_identifier": "6001", "symbol": "SYNTHUSD", "state": "filled"}
+      ],
+      "deals": [
+        {"deal_ticket": "2001", "order_ticket": "1001", "position_identifier": "6001", "entry": "in", "direction": "buy", "volume": "0.10", "price": "1.10010", "requested_price": "1.10000", "profit": "0", "commission": "0", "swap": "0", "fee": "0"}
+      ],
+      "positions": [
+        {"position_identifier": "6001", "symbol": "SYNTHUSD", "side": "buy", "volume": "0.10", "price_open": "1.10010", "current_price": "1.10110", "sl": "1.09510", "tp": "1.11010", "cost_buffer": "0", "opened_at_utc": "2026-10-30T18:59:58Z"}
+      ]
+    },
+    {
+      "cycle_id": "cycle-2-modified",
+      "observed_at_utc": "2026-10-30T19:01:00Z",
+      "connection": {
+        "server_connected": true,
+        "orders_complete": true,
+        "deals_complete": true,
+        "positions_complete": true
+      },
+      "account_state": {
+        "currency": "USD",
+        "balance": "10020",
+        "equity": "10030",
+        "capital_basis": "equity",
+        "cashflows_resolved": true
+      },
+      "orders": [
+        {"order_ticket": "1001", "position_identifier": "6001", "symbol": "SYNTHUSD", "state": "filled"}
+      ],
+      "deals": [
+        {"deal_ticket": "2001", "order_ticket": "1001", "position_identifier": "6001", "entry": "in", "direction": "buy", "volume": "0.10", "price": "1.10010", "requested_price": "1.10000", "profit": "0", "commission": "0", "swap": "0", "fee": "0"}
+      ],
+      "positions": [
+        {"position_identifier": "6001", "symbol": "SYNTHUSD", "side": "buy", "volume": "0.10", "price_open": "1.10010", "current_price": "1.10410", "sl": "1.09710", "tp": "1.11010", "cost_buffer": "0", "opened_at_utc": "2026-10-30T18:59:58Z"}
+      ]
+    },
+    {
+      "cycle_id": "cycle-3-closed",
+      "observed_at_utc": "2026-10-30T19:02:00Z",
+      "connection": {
+        "server_connected": true,
+        "orders_complete": true,
+        "deals_complete": true,
+        "positions_complete": true
+      },
+      "account_state": {
+        "currency": "USD",
+        "balance": "10057",
+        "equity": "10057",
+        "capital_basis": "equity",
+        "cashflows_resolved": true
+      },
+      "orders": [
+        {"order_ticket": "1001", "position_identifier": "6001", "symbol": "SYNTHUSD", "state": "filled"},
+        {"order_ticket": "1002", "position_identifier": "6001", "symbol": "SYNTHUSD", "state": "filled"}
+      ],
+      "deals": [
+        {"deal_ticket": "2001", "order_ticket": "1001", "position_identifier": "6001", "entry": "in", "direction": "buy", "volume": "0.10", "price": "1.10010", "requested_price": "1.10000", "profit": "0", "commission": "0", "swap": "0", "fee": "0"},
+        {"deal_ticket": "2002", "order_ticket": "1002", "position_identifier": "6001", "entry": "out", "direction": "sell", "volume": "0.10", "price": "1.10600", "requested_price": "1.10590", "profit": "58", "commission": "-1", "swap": "0", "fee": "0"}
+      ],
+      "positions": []
+    },
+    {
+      "cycle_id": "cycle-4-second-open",
+      "observed_at_utc": "2026-10-30T19:03:00Z",
+      "connection": {
+        "server_connected": true,
+        "orders_complete": true,
+        "deals_complete": true,
+        "positions_complete": true
+      },
+      "account_state": {
+        "currency": "USD",
+        "balance": "10030",
+        "equity": "10020",
+        "capital_basis": "equity",
+        "cashflows_resolved": true
+      },
+      "orders": [
+        {"order_ticket": "1003", "position_identifier": "7001", "symbol": "SYNTHUSD", "state": "filled"}
+      ],
+      "deals": [
+        {"deal_ticket": "2003", "order_ticket": "1003", "position_identifier": "7001", "entry": "in", "direction": "sell", "volume": "0.20", "price": "1.20000", "requested_price": null, "profit": "0", "commission": "0", "swap": "0", "fee": "0"}
+      ],
+      "positions": [
+        {"position_identifier": "7001", "symbol": "SYNTHUSD", "side": "sell", "volume": "0.20", "price_open": "1.20000", "current_price": "1.19800", "sl": "1.20500", "tp": "1.19000", "cost_buffer": "0", "opened_at_utc": "2026-10-30T19:02:58Z"}
+      ]
+    },
+    {
+      "cycle_id": "cycle-5-unknown-disappearance",
+      "observed_at_utc": "2026-10-30T19:04:00Z",
+      "connection": {
+        "server_connected": true,
+        "orders_complete": true,
+        "deals_complete": true,
+        "positions_complete": true
+      },
+      "account_state": {
+        "currency": "USD",
+        "balance": "10010",
+        "equity": "9990",
+        "capital_basis": "equity",
+        "cashflows_resolved": true
+      },
+      "orders": [
+        {"order_ticket": "1003", "position_identifier": "7001", "symbol": "SYNTHUSD", "state": "filled"}
+      ],
+      "deals": [
+        {"deal_ticket": "2003", "order_ticket": "1003", "position_identifier": "7001", "entry": "in", "direction": "sell", "volume": "0.20", "price": "1.20000", "requested_price": null, "profit": "0", "commission": "0", "swap": "0", "fee": "0"}
+      ],
+      "positions": []
+    }
+  ]
+}

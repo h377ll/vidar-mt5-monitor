@@ -1,0 +1,1 @@
+"""Persistent service acceptance tests."""

@@ -1,0 +1,463 @@
+{
+  "release": "v0.1.0-dev",
+  "synthetic_only": true,
+  "accepted": true,
+  "suites": [
+    {
+      "suite": "phase_a",
+      "exit_code": 0,
+      "verification": {
+        "phase": "A",
+        "accepted": true,
+        "tests_run": 49,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "synthetic_fixture_override": true,
+        "real_source_calls": 0,
+        "telegram_sends": 0,
+        "temporary_directory_removed": true,
+        "protected_files": 9,
+        "changed_project_files": [],
+        "limitations": [
+          "No EA compilation or installation",
+          "No demo/real MT5 access",
+          "No inbox-to-reconciler integration",
+          "No real notification delivery",
+          "Guard applies to this Python test process, not host-wide isolation"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "suite": "phase_b",
+      "exit_code": 0,
+      "verification": {
+        "phase": "B",
+        "accepted": true,
+        "tests_run": 30,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "protected_file_counts": {
+          "project": 5,
+          "phase_c_documentation": 1
+        },
+        "changed_protected_files": {
+          "project": [],
+          "phase_c_documentation": []
+        },
+        "temporary_roots_removed": true,
+        "listeners_closed": true,
+        "real_mt5_calls": 0,
+        "real_notifications": 0,
+        "services_installed": 0,
+        "sqx_interactions": 0,
+        "limitations": [
+          "Python audit guards, not host-wide OS isolation",
+          "Synthetic history provider, not live reconciliation",
+          "No MQL5 compilation or terminal execution",
+          "No real provider or human receipt",
+          "No crash-before-disk guarantee for EA RAM queue"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "suite": "engine",
+      "exit_code": 0,
+      "verification": {
+        "schema_version": "vidar.engine.i1.verification.v1",
+        "accepted": true,
+        "tests_planned": 60,
+        "tests_run": 60,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "synthetic_fixture": "tests/fixtures/engine/synthetic-lifecycle.json",
+        "deterministic_output_equal": true,
+        "deterministic_output_sha256": "4066e76f4959601c3dc0378ad3f932a4a46541837f04ee1a47134883c6cce5dd",
+        "protected_files": 13,
+        "protected_files_changed": [],
+        "blocked_operations": [],
+        "real_mt5_calls": 0,
+        "real_notifications": 0,
+        "services_or_schedulers_changed": 0,
+        "vault_writes": 0,
+        "sqx_interactions": 0,
+        "limitations": [
+          "Synthetic authority only; no MT5 schema or history coverage commissioned",
+          "No EA compilation, terminal connection or account observation",
+          "No Grafana datasource, Obsidian vault or alert emitter activated"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "suite": "supervisor",
+      "exit_code": 0,
+      "verification": {
+        "schema_version": "vidar.mt5.supervisor-verification.v1",
+        "accepted": true,
+        "tests_planned": 21,
+        "tests_run": 21,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "acceptance_checks": {
+          "observer_event_captured": true,
+          "persistence_and_restart": true,
+          "reconciliation_closed_confirmed": true,
+          "unknown_disappearance_detected": true,
+          "deterministic_calculation_contrasted": true,
+          "obsidian_test_note_created": true,
+          "duplicate_suppression": true
+        },
+        "blocked_operations": [],
+        "protected_files": 36,
+        "protected_files_changed": [],
+        "real_mt5_calls": 0,
+        "trading_writes": 0,
+        "services_or_schedulers_changed": 0,
+        "sqx_or_jmx_interactions": 0
+      },
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "exit_code": 0,
+      "verification": {
+        "schema_version": "vidar.mt5.service-verification.v1",
+        "accepted": true,
+        "tests_planned": 51,
+        "tests_run": 51,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "protected_files_changed": [],
+        "real_mt5_calls": 0,
+        "trading_writes": 0,
+        "real_notifications": 0,
+        "services_or_schedulers_changed": 0,
+        "ft_qt_interactions": 0
+      },
+      "passed": true
+    },
+    {
+      "suite": "dashboard_demo",
+      "exit_code": 0,
+      "verification": {
+        "accepted": true,
+        "blocked_operations_observed": [],
+        "checks": {
+          "blocked_operations": true,
+          "clearly_synthetic": true,
+          "deterministic_bytes": true,
+          "human_and_agent_layers_excluded": true,
+          "projection_read_only": true,
+          "protected_components_unchanged": true,
+          "quality_and_provenance_present": true,
+          "raw_account_identity_excluded": true,
+          "required_metrics_present": true,
+          "sqlite_quick_check": true
+        },
+        "cycles": 5,
+        "dataset_digest": "sha256:c76cdb3cc42da4e8d52839d588016ff0aced03f22c1e5fd59059dec2949f08b0",
+        "dataset_sha256": "3628c8fd2dc9f527c523fa53d50a2af23513996b0c5feaeecdfd76988f1ae193",
+        "fixture": "tests/fixtures/engine/supervisor-sequence.json",
+        "fixture_digest": "sha256:c9318e54649ceae9200b3a38f8f220f59c1db2c2c3958c8841ec5acfb593b0fd",
+        "ft_qt_sqx_interactions": 0,
+        "g4b_actions": 0,
+        "grafana_changes": 0,
+        "metric_rows": 82,
+        "not_implemented_or_claimed": [
+          "profit_max_drawdown",
+          "session_statistics"
+        ],
+        "protected_files": 13,
+        "protected_files_changed": [],
+        "quality_counts": {
+          "ESTIMATED": 4,
+          "KNOWN": 56,
+          "UNKNOWN": 16,
+          "UNVERIFIABLE": 6
+        },
+        "real_mt5_calls": 0,
+        "schema_version": "vidar.dashboard.demo-verification.v1",
+        "service_changes": 0,
+        "vault_writes": 0
+      },
+      "passed": true
+    },
+    {
+      "suite": "phase_c_host",
+      "exit_code": 0,
+      "verification": {
+        "kind": "host-adapted function bodies with MT5 API doubles",
+        "not_mql5_compilation": true,
+        "not_terminal_initialization": true,
+        "source_sha256": "7b470d8ab86ba48d2987f96f3ef8f28043ba908f5c4cfb74e72e51cc82c4f3b1",
+        "passed": 62,
+        "failed": 0,
+        "exit_code": 0,
+        "static_checks": "no trading/network/imports; no I/O in callback/deinit",
+        "temporary_build_removed": true
+      },
+      "passed": true
+    },
+    {
+      "suite": "shadow_management",
+      "exit_code": 0,
+      "verification": {
+        "accepted": true,
+        "broker_requests": 0,
+        "checks": [
+          {
+            "name": "buy break-even",
+            "passed": true,
+            "result": "SIMULATION_PASSED"
+          },
+          {
+            "name": "partial close",
+            "passed": true,
+            "result": "SIMULATION_PASSED"
+          },
+          {
+            "name": "full close",
+            "passed": true,
+            "result": "SIMULATION_PASSED"
+          },
+          {
+            "name": "block account_type",
+            "passed": true,
+            "result": "REAL_OR_PROP_EXECUTION_BLOCKED"
+          },
+          {
+            "name": "block environment",
+            "passed": true,
+            "result": "REAL_OR_PROP_EXECUTION_BLOCKED"
+          },
+          {
+            "name": "block connected",
+            "passed": true,
+            "result": "INCOMPLETE_DATA"
+          },
+          {
+            "name": "block global_complete",
+            "passed": true,
+            "result": "INCOMPLETE_DATA"
+          },
+          {
+            "name": "block positions_complete",
+            "passed": true,
+            "result": "INCOMPLETE_DATA"
+          },
+          {
+            "name": "block specs_verified",
+            "passed": true,
+            "result": "INCOMPLETE_DATA"
+          },
+          {
+            "name": "block firm_rules_verified",
+            "passed": true,
+            "result": "FIRM_RULES_NOT_VERIFIED"
+          },
+          {
+            "name": "block action_window_clear",
+            "passed": true,
+            "result": "ACTION_WINDOW_NOT_CLEARED"
+          },
+          {
+            "name": "prop demo is not sandbox",
+            "passed": true,
+            "result": "REAL_OR_PROP_EXECUTION_BLOCKED"
+          },
+          {
+            "name": "account mismatch",
+            "passed": true,
+            "result": "ACCOUNT_MISMATCH"
+          },
+          {
+            "name": "position absent",
+            "passed": true,
+            "result": "POSITION_NOT_UNIQUE"
+          },
+          {
+            "name": "old data",
+            "passed": true,
+            "result": "STALE_OR_FUTURE_DATA"
+          },
+          {
+            "name": "future data",
+            "passed": true,
+            "result": "STALE_OR_FUTURE_DATA"
+          },
+          {
+            "name": "stale digest",
+            "passed": true,
+            "result": "STALE_SNAPSHOT"
+          },
+          {
+            "name": "exceeded account_risk_money",
+            "passed": true,
+            "result": "LIMIT_OR_UNKNOWN:account_risk_money"
+          },
+          {
+            "name": "unknown account_risk_money",
+            "passed": true,
+            "result": "MISSING_OR_INVALID_DATA"
+          },
+          {
+            "name": "exceeded global_risk_money",
+            "passed": true,
+            "result": "LIMIT_OR_UNKNOWN:global_risk_money"
+          },
+          {
+            "name": "unknown global_risk_money",
+            "passed": true,
+            "result": "MISSING_OR_INVALID_DATA"
+          },
+          {
+            "name": "exceeded account_drawdown_money",
+            "passed": true,
+            "result": "LIMIT_OR_UNKNOWN:account_drawdown_money"
+          },
+          {
+            "name": "unknown account_drawdown_money",
+            "passed": true,
+            "result": "MISSING_OR_INVALID_DATA"
+          },
+          {
+            "name": "exceeded global_drawdown_money",
+            "passed": true,
+            "result": "LIMIT_OR_UNKNOWN:global_drawdown_money"
+          },
+          {
+            "name": "unknown global_drawdown_money",
+            "passed": true,
+            "result": "MISSING_OR_INVALID_DATA"
+          },
+          {
+            "name": "opening forbidden",
+            "passed": true,
+            "result": "OPEN_OR_EXPOSURE_INCREASE_FORBIDDEN"
+          },
+          {
+            "name": "exposure increase forbidden",
+            "passed": true,
+            "result": "UNSUPPORTED_FIELDS"
+          },
+          {
+            "name": "stop removal forbidden",
+            "passed": true,
+            "result": "BREAK_EVEN_TARGET_OR_TICK_INVALID"
+          },
+          {
+            "name": "stop widening forbidden",
+            "passed": true,
+            "result": "INVALID_BREAK_EVEN_POLICY"
+          },
+          {
+            "name": "already protected beyond BE",
+            "passed": true,
+            "result": "STOP_WIDENING_OR_BROKER_DISTANCE"
+          },
+          {
+            "name": "missing stop",
+            "passed": true,
+            "result": "UNPROTECTED_OR_INVALID_POSITION"
+          },
+          {
+            "name": "invalid tick",
+            "passed": true,
+            "result": "INVALID_SYMBOL_SPEC"
+          },
+          {
+            "name": "unknown step",
+            "passed": true,
+            "result": "MISSING_OR_INVALID_DATA"
+          },
+          {
+            "name": "freeze distance",
+            "passed": true,
+            "result": "STOP_WIDENING_OR_BROKER_DISTANCE"
+          },
+          {
+            "name": "off tick",
+            "passed": true,
+            "result": "BREAK_EVEN_TARGET_OR_TICK_INVALID"
+          },
+          {
+            "name": "close too much",
+            "passed": true,
+            "result": "INVALID_CLOSE_VOLUME"
+          },
+          {
+            "name": "close off step",
+            "passed": true,
+            "result": "INVALID_CLOSE_VOLUME"
+          },
+          {
+            "name": "dust remainder",
+            "passed": true,
+            "result": "PARTIAL_VOLUME_OR_REMAINDER_TOO_SMALL"
+          },
+          {
+            "name": "extra TP change",
+            "passed": true,
+            "result": "UNSUPPORTED_FIELDS"
+          },
+          {
+            "name": "NaN",
+            "passed": true,
+            "result": "MISSING_OR_INVALID_DATA"
+          },
+          {
+            "name": "boolean numeric",
+            "passed": true,
+            "result": "MISSING_OR_INVALID_DATA"
+          },
+          {
+            "name": "missing input",
+            "passed": true,
+            "result": "MISSING_OR_INVALID_DATA"
+          },
+          {
+            "name": "sell break-even",
+            "passed": true,
+            "result": "SIMULATION_PASSED"
+          },
+          {
+            "name": "idempotency after restart",
+            "passed": true
+          },
+          {
+            "name": "idempotency key conflict",
+            "passed": true
+          }
+        ],
+        "execution_allowed": false,
+        "failed": 0,
+        "passed": 45,
+        "qt_rules_approved": false,
+        "synthetic": true
+      },
+      "passed": true
+    },
+    {
+      "suite": "offline_html",
+      "exit_code": 0,
+      "passed": true,
+      "tests_run": 3
+    }
+  ],
+  "environment": {
+    "platform": "Linux",
+    "python": "3.13.5",
+    "source": "selected public package",
+    "live_mt5_calls": 0,
+    "trading_requests": 0,
+    "service_changes": 0
+  },
+  "unit_tests_and_scenarios": 321
+}

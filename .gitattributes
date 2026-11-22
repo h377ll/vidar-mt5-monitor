@@ -1,0 +1,6 @@
+# Preserve exact bytes for source and provenance hashes; no automatic EOL conversion.
+* -text
+# Historical CSV uses CRLF; retain its exact bytes and recognize the CR as EOL.
+*.csv whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+# Unified patches require a single space on empty context lines.
+*.patch -whitespace

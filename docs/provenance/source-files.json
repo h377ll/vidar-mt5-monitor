@@ -1,0 +1,669 @@
+{
+  "schema_version": 1,
+  "release": "v0.1.0-dev",
+  "source_archive": "MT5-Monitor-Fases-ABC-2026-10-20.zip",
+  "source_archive_sha256": "fcb291db261b1248d4c72d26e48790864f4dd103ce3ca9ea533f6893703ebc89",
+  "scope": "selected project sources only; no development Git objects or operational installation copied",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "source_sha256": "f8d9b8d0151f9609c106e4ad1725259c38ff03f6d8e377f93f727da9004e4ed4",
+      "public_sha256": "f8d9b8d0151f9609c106e4ad1725259c38ff03f6d8e377f93f727da9004e4ed4",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": ".gitignore",
+      "source_sha256": "fc4cad616ef00fcf227fc9f0e348b631b88bbde3ce518600fa6b7a273c2028ab",
+      "public_sha256": "fc4cad616ef00fcf227fc9f0e348b631b88bbde3ce518600fa6b7a273c2028ab",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "VERSION",
+      "source_sha256": "c2ef39e09593cca70be98a0fb0ab435b53e2eb3c3d4e812cd7d43794eafa7728",
+      "public_sha256": "c2ef39e09593cca70be98a0fb0ab435b53e2eb3c3d4e812cd7d43794eafa7728",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "ea/VidarObserverDemo.mq5",
+      "source_sha256": "b1391fc2efe061c125606e496d19379f9760fcf00200dcdafeeec29458aa0e43",
+      "public_sha256": "b1391fc2efe061c125606e496d19379f9760fcf00200dcdafeeec29458aa0e43",
+      "origin": "reviewed ABC archive and project adaptations",
+      "archive_sha256": "b1391fc2efe061c125606e496d19379f9760fcf00200dcdafeeec29458aa0e43",
+      "archive_reorganization_sha256": "b1391fc2efe061c125606e496d19379f9760fcf00200dcdafeeec29458aa0e43",
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "ea/phase_c/VidarObserverDemoC.mq5",
+      "source_sha256": "7b470d8ab86ba48d2987f96f3ef8f28043ba908f5c4cfb74e72e51cc82c4f3b1",
+      "public_sha256": "7b470d8ab86ba48d2987f96f3ef8f28043ba908f5c4cfb74e72e51cc82c4f3b1",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "src/engine/__init__.py",
+      "source_sha256": "e2c04a7ddd12c7eb5b680ab76096b0ef50cd4633460c28b34d78f1b5016ae93d",
+      "public_sha256": "e2c04a7ddd12c7eb5b680ab76096b0ef50cd4633460c28b34d78f1b5016ae93d",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "src/engine/alerts.py",
+      "source_sha256": "29358713ff7e8d40845cc104c33ff33eb7cc2c1464bfbc4669204007cd5f5d69",
+      "public_sha256": "29358713ff7e8d40845cc104c33ff33eb7cc2c1464bfbc4669204007cd5f5d69",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "src/engine/contracts.py",
+      "source_sha256": "8d6589f86006f40ceedb24f6d748a9a0508b99dadde1cfa2d2e23910c2eb9eda",
+      "public_sha256": "8d6589f86006f40ceedb24f6d748a9a0508b99dadde1cfa2d2e23910c2eb9eda",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "src/engine/dashboard.py",
+      "source_sha256": "9364bcf126681223d4cb63c85d6b984ebe8c47a61b6e2e1fadf4fb6d76bfb990",
+      "public_sha256": "9364bcf126681223d4cb63c85d6b984ebe8c47a61b6e2e1fadf4fb6d76bfb990",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "src/engine/metrics.py",
+      "source_sha256": "56fe3aa285e829777143ee892dbf7e2fbc278a44df34af21cb55554c405ac118",
+      "public_sha256": "56fe3aa285e829777143ee892dbf7e2fbc278a44df34af21cb55554c405ac118",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "src/engine/reconciliation.py",
+      "source_sha256": "e6f0f266c20846bc4bfa931e7dbe551afbc03b46b4f954302844abeb4c8ae245",
+      "public_sha256": "e6f0f266c20846bc4bfa931e7dbe551afbc03b46b4f954302844abeb4c8ae245",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "src/engine/reporting.py",
+      "source_sha256": "998ff8d66b21db2ce949454a3170f3a2222dbaf848afa56a38db0ab2a9734ef6",
+      "public_sha256": "998ff8d66b21db2ce949454a3170f3a2222dbaf848afa56a38db0ab2a9734ef6",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "src/engine/schema.py",
+      "source_sha256": "1e7a37ce50184632979eb52714302a150c782af288daddd53c1b60bffe29d36b",
+      "public_sha256": "1e7a37ce50184632979eb52714302a150c782af288daddd53c1b60bffe29d36b",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "src/engine/shadow_management.py",
+      "source_sha256": "06e8e94c1854fabd3a03f6173081cb5dcc16645cb33808b4d2398a4eba5c8221",
+      "public_sha256": "06e8e94c1854fabd3a03f6173081cb5dcc16645cb33808b4d2398a4eba5c8221",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "reviewed working-tree addition",
+      "public_transform": "none"
+    },
+    {
+      "path": "src/engine/supervisor.py",
+      "source_sha256": "802be695aeb0193aa8c5d5b1c7e4200c731984a312fb394aae0c490e3a90cd2a",
+      "public_sha256": "802be695aeb0193aa8c5d5b1c7e4200c731984a312fb394aae0c490e3a90cd2a",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "src/original/event_receiver.py",
+      "source_sha256": "4e3c8195b9c03e47a66012a6d38ab320135a89c793021ae05c0917d5fa5aac64",
+      "public_sha256": "4e3c8195b9c03e47a66012a6d38ab320135a89c793021ae05c0917d5fa5aac64",
+      "origin": "reviewed ABC archive and project adaptations",
+      "archive_sha256": "4e3c8195b9c03e47a66012a6d38ab320135a89c793021ae05c0917d5fa5aac64",
+      "archive_reorganization_sha256": "4e3c8195b9c03e47a66012a6d38ab320135a89c793021ae05c0917d5fa5aac64",
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "src/original/journal.py",
+      "source_sha256": "a74c4b44e201d419a378039aac1e8bd7ed8effe84acde0b28582378ba9dfbd3c",
+      "public_sha256": "e057c441c17aaac298477c4108c59d2efeeb4dadb3f36be4fce10a1ac4133833",
+      "origin": "reviewed ABC archive and project adaptations",
+      "archive_sha256": "a74c4b44e201d419a378039aac1e8bd7ed8effe84acde0b28582378ba9dfbd3c",
+      "archive_reorganization_sha256": "a74c4b44e201d419a378039aac1e8bd7ed8effe84acde0b28582378ba9dfbd3c",
+      "development_state": "tracked project file",
+      "public_transform": "replace obsolete site-specific coverage prose with generic unknown-coverage wording; no logic changes"
+    },
+    {
+      "path": "src/original/notifications.py",
+      "source_sha256": "faadbbc26163569265f06bdf35e05ca38d7b651681a68d8b9e7c9ca1c678457a",
+      "public_sha256": "faadbbc26163569265f06bdf35e05ca38d7b651681a68d8b9e7c9ca1c678457a",
+      "origin": "reviewed ABC archive and project adaptations",
+      "archive_sha256": "faadbbc26163569265f06bdf35e05ca38d7b651681a68d8b9e7c9ca1c678457a",
+      "archive_reorganization_sha256": "faadbbc26163569265f06bdf35e05ca38d7b651681a68d8b9e7c9ca1c678457a",
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "src/original/risk.py",
+      "source_sha256": "2f059756d01d9f90983a7ed99a3701fef76a6c69a32e421a63111ad92e1f0c76",
+      "public_sha256": "2f059756d01d9f90983a7ed99a3701fef76a6c69a32e421a63111ad92e1f0c76",
+      "origin": "reviewed ABC archive and project adaptations",
+      "archive_sha256": "2f059756d01d9f90983a7ed99a3701fef76a6c69a32e421a63111ad92e1f0c76",
+      "archive_reorganization_sha256": "2f059756d01d9f90983a7ed99a3701fef76a6c69a32e421a63111ad92e1f0c76",
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "src/original/spool_bridge.py",
+      "source_sha256": "1812e1d36682a24c7a50a411d3c39aad5e335a3d771b05a0a1b6c16908bdaca3",
+      "public_sha256": "1812e1d36682a24c7a50a411d3c39aad5e335a3d771b05a0a1b6c16908bdaca3",
+      "origin": "reviewed ABC archive and project adaptations",
+      "archive_sha256": "1812e1d36682a24c7a50a411d3c39aad5e335a3d771b05a0a1b6c16908bdaca3",
+      "archive_reorganization_sha256": "1812e1d36682a24c7a50a411d3c39aad5e335a3d771b05a0a1b6c16908bdaca3",
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "src/phase_b/__init__.py",
+      "source_sha256": "e4db4b4717364d013c194e4477c2573056ff7048b1c9e65c064498934da31512",
+      "public_sha256": "e4db4b4717364d013c194e4477c2573056ff7048b1c9e65c064498934da31512",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "src/phase_b/event_receiver.py",
+      "source_sha256": "11bb8a87c2d465a61cf655d576413473a19d9972fce0c50f18eba8688f735aaa",
+      "public_sha256": "11bb8a87c2d465a61cf655d576413473a19d9972fce0c50f18eba8688f735aaa",
+      "origin": "reviewed ABC archive and project adaptations",
+      "archive_sha256": "d31e9422071d540ce2f334af9bfe35e8826e45248057b8b0dff0bacd3fd7d261",
+      "archive_reorganization_sha256": "d31e9422071d540ce2f334af9bfe35e8826e45248057b8b0dff0bacd3fd7d261",
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "src/phase_b/journal.py",
+      "source_sha256": "1cbfdc2cf5270ae66eceb505e05e592ae3a336d1e694ff4abc10245d6aef710d",
+      "public_sha256": "0466c31f5098edaceef8daf8d8008ed3eadf5e6fba17bd50dc43951e8d2e822c",
+      "origin": "reviewed ABC archive and project adaptations",
+      "archive_sha256": "1cbfdc2cf5270ae66eceb505e05e592ae3a336d1e694ff4abc10245d6aef710d",
+      "archive_reorganization_sha256": "1cbfdc2cf5270ae66eceb505e05e592ae3a336d1e694ff4abc10245d6aef710d",
+      "development_state": "tracked project file",
+      "public_transform": "replace obsolete site-specific coverage prose with generic unknown-coverage wording; no logic changes"
+    },
+    {
+      "path": "src/phase_b/notifications.py",
+      "source_sha256": "faadbbc26163569265f06bdf35e05ca38d7b651681a68d8b9e7c9ca1c678457a",
+      "public_sha256": "faadbbc26163569265f06bdf35e05ca38d7b651681a68d8b9e7c9ca1c678457a",
+      "origin": "reviewed ABC archive and project adaptations",
+      "archive_sha256": "faadbbc26163569265f06bdf35e05ca38d7b651681a68d8b9e7c9ca1c678457a",
+      "archive_reorganization_sha256": "faadbbc26163569265f06bdf35e05ca38d7b651681a68d8b9e7c9ca1c678457a",
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "src/phase_b/phase_b.py",
+      "source_sha256": "579cb3ee0e2bdf8dd2e5c47347605a5e20ae6d1209645f14470d509402c07afb",
+      "public_sha256": "579cb3ee0e2bdf8dd2e5c47347605a5e20ae6d1209645f14470d509402c07afb",
+      "origin": "reviewed ABC archive and project adaptations",
+      "archive_sha256": "98edb459d859b7e0a65ac7573ecf21db5ef5cabd413c50dd5e2200daeba0035a",
+      "archive_reorganization_sha256": "98edb459d859b7e0a65ac7573ecf21db5ef5cabd413c50dd5e2200daeba0035a",
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "src/phase_b/spool_bridge.py",
+      "source_sha256": "bfcf94a749e97e20906e171515470cd2b79d9b230fe6cbaef979e9c1f9608cca",
+      "public_sha256": "bfcf94a749e97e20906e171515470cd2b79d9b230fe6cbaef979e9c1f9608cca",
+      "origin": "reviewed ABC archive and project adaptations",
+      "archive_sha256": "450161e6e7eb2b1c6dab9e0d023d3864d787293b246079a9d1ee36d938920286",
+      "archive_reorganization_sha256": "450161e6e7eb2b1c6dab9e0d023d3864d787293b246079a9d1ee36d938920286",
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "src/provider/__init__.py",
+      "source_sha256": "f58460f514d6fdf7ddde6c6921c3e632a1fca479faa0a6d7a30aeb5f9eb23549",
+      "public_sha256": "f58460f514d6fdf7ddde6c6921c3e632a1fca479faa0a6d7a30aeb5f9eb23549",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "src/provider/mt5_mcp_projection_experimental.py",
+      "source_sha256": "4db956c8e8ee1ba15d28f66b73b42def888a2b94fb6702ca57e79dccfd66018d",
+      "public_sha256": "4db956c8e8ee1ba15d28f66b73b42def888a2b94fb6702ca57e79dccfd66018d",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "reviewed working-tree addition",
+      "public_transform": "none"
+    },
+    {
+      "path": "src/provider/mt5_mcp_readonly.py",
+      "source_sha256": "d84af82166fd097e8ff5fb6c200410720648d4a25472c007295103b262caa332",
+      "public_sha256": "d84af82166fd097e8ff5fb6c200410720648d4a25472c007295103b262caa332",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "reviewed working-tree addition",
+      "public_transform": "none"
+    },
+    {
+      "path": "src/provider/mt5_readonly.py",
+      "source_sha256": "1e024347fce6290eec5ae0f0bed928d7948e0986b508ecacf67ce8caa6f43ff1",
+      "public_sha256": "1e024347fce6290eec5ae0f0bed928d7948e0986b508ecacf67ce8caa6f43ff1",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "src/provider/verify_private_network.py",
+      "source_sha256": "f7849864c53b4f43969aaebed1c9abd0bfcc997fcb0882b9d47b3d048085c683",
+      "public_sha256": "f7849864c53b4f43969aaebed1c9abd0bfcc997fcb0882b9d47b3d048085c683",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "src/service/__init__.py",
+      "source_sha256": "8fde38b2d766f5af2c1c700386a78e2576297e8198a98fb9567dd5697fc491c9",
+      "public_sha256": "8fde38b2d766f5af2c1c700386a78e2576297e8198a98fb9567dd5697fc491c9",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "src/service/backup.py",
+      "source_sha256": "8570db33463a11177ef1a9f14d2b3236383dc5f06be84f569f979adaa5b5e256",
+      "public_sha256": "8570db33463a11177ef1a9f14d2b3236383dc5f06be84f569f979adaa5b5e256",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "src/service/cli.py",
+      "source_sha256": "af00616b8771fc9cd59306db89f18b5bf40b922804ff83125c1707f28a9139b3",
+      "public_sha256": "af00616b8771fc9cd59306db89f18b5bf40b922804ff83125c1707f28a9139b3",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "src/service/contracts.py",
+      "source_sha256": "42c762e2e804be13c5e33fe530c0437083b94981bbe232a9e843a11334d3a243",
+      "public_sha256": "42c762e2e804be13c5e33fe530c0437083b94981bbe232a9e843a11334d3a243",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "src/service/offline_html_backfill.py",
+      "source_sha256": "f7238cff56835b848f92f03c8b877e38d9cdaed17dfce19c4af3bda77f8150c3",
+      "public_sha256": "f7238cff56835b848f92f03c8b877e38d9cdaed17dfce19c4af3bda77f8150c3",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "src/service/offline_mcp_open_observation.py",
+      "source_sha256": "f80879799b4d667d2dd7f04c4b968292503caa60037648a7b3f54cf7e014f72b",
+      "public_sha256": "f80879799b4d667d2dd7f04c4b968292503caa60037648a7b3f54cf7e014f72b",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "reviewed working-tree addition",
+      "public_transform": "none"
+    },
+    {
+      "path": "src/service/outbox.py",
+      "source_sha256": "eef686f83831042a1a3d2da163091cc0a56a7ba9ccdbbc1f7bbde730473e0823",
+      "public_sha256": "eef686f83831042a1a3d2da163091cc0a56a7ba9ccdbbc1f7bbde730473e0823",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "src/service/runtime.py",
+      "source_sha256": "e72f838b373da61248815c9ed3f22e8f422ff85f943d67d2f086d5d905840767",
+      "public_sha256": "e72f838b373da61248815c9ed3f22e8f422ff85f943d67d2f086d5d905840767",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "tests/engine/test_dashboard.py",
+      "source_sha256": "a4e5ec5e7d3bfa40282c1e618768f8edc60d02e0d5a27070ee13619d1d7c9edf",
+      "public_sha256": "a4e5ec5e7d3bfa40282c1e618768f8edc60d02e0d5a27070ee13619d1d7c9edf",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "tests/engine/test_engine.py",
+      "source_sha256": "28219da72fa9660b06cb7cb673b7b1366172f1e7e3c5d5947ae4f821f6090af8",
+      "public_sha256": "28219da72fa9660b06cb7cb673b7b1366172f1e7e3c5d5947ae4f821f6090af8",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "tests/engine/test_supervisor.py",
+      "source_sha256": "0392d657515a64a60ab1d79d25084bf191bded34f0eb040d9983e8291befa0dc",
+      "public_sha256": "0392d657515a64a60ab1d79d25084bf191bded34f0eb040d9983e8291befa0dc",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "tests/fixtures/engine/supervisor-sequence.json",
+      "source_sha256": "c9318e54649ceae9200b3a38f8f220f59c1db2c2c3958c8841ec5acfb593b0fd",
+      "public_sha256": "c9318e54649ceae9200b3a38f8f220f59c1db2c2c3958c8841ec5acfb593b0fd",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "tests/fixtures/engine/synthetic-lifecycle.json",
+      "source_sha256": "5d921ffcdb5d9866453418051eb9b11949a6563cea793248a5af0fa479f57c29",
+      "public_sha256": "5d921ffcdb5d9866453418051eb9b11949a6563cea793248a5af0fa479f57c29",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "tests/fixtures/phase-b/example-authority.json",
+      "source_sha256": "719ef367d1aa695537927679db5bba8c6971310249469a912d3250b040b2e69f",
+      "public_sha256": "719ef367d1aa695537927679db5bba8c6971310249469a912d3250b040b2e69f",
+      "origin": "reviewed ABC archive and project adaptations",
+      "archive_sha256": "719ef367d1aa695537927679db5bba8c6971310249469a912d3250b040b2e69f",
+      "archive_reorganization_sha256": "719ef367d1aa695537927679db5bba8c6971310249469a912d3250b040b2e69f",
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "tests/fixtures/phase-b/example-ledger.json",
+      "source_sha256": "290d092d855294ddec26eee2a0df2309af453dede027b8d22bcc629e88e1fa07",
+      "public_sha256": "290d092d855294ddec26eee2a0df2309af453dede027b8d22bcc629e88e1fa07",
+      "origin": "reviewed ABC archive and project adaptations",
+      "archive_sha256": "290d092d855294ddec26eee2a0df2309af453dede027b8d22bcc629e88e1fa07",
+      "archive_reorganization_sha256": "290d092d855294ddec26eee2a0df2309af453dede027b8d22bcc629e88e1fa07",
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "tests/fixtures/phase-b/example-spool.jsonl",
+      "source_sha256": "2d46d5e4f1867edaa386e7ac56a14c1c09a8d019898a015c0406b9ab8511ee98",
+      "public_sha256": "2d46d5e4f1867edaa386e7ac56a14c1c09a8d019898a015c0406b9ab8511ee98",
+      "origin": "reviewed ABC archive and project adaptations",
+      "archive_sha256": "2d46d5e4f1867edaa386e7ac56a14c1c09a8d019898a015c0406b9ab8511ee98",
+      "archive_reorganization_sha256": "2d46d5e4f1867edaa386e7ac56a14c1c09a8d019898a015c0406b9ab8511ee98",
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "tests/fixtures/provider/mcp-readonly-complete.json",
+      "source_sha256": "42888969bf38f44af5e348d2624678d1c1dd72bfeecce950239fd3e87227e2de",
+      "public_sha256": "42888969bf38f44af5e348d2624678d1c1dd72bfeecce950239fd3e87227e2de",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "reviewed working-tree addition",
+      "public_transform": "none"
+    },
+    {
+      "path": "tests/original/test_event_receiver.py",
+      "source_sha256": "ae37180e09289b25dacb78db8b2a9e738f1de471e6bce7ad196acec04b5d16ef",
+      "public_sha256": "ae37180e09289b25dacb78db8b2a9e738f1de471e6bce7ad196acec04b5d16ef",
+      "origin": "reviewed ABC archive and project adaptations",
+      "archive_sha256": "ae37180e09289b25dacb78db8b2a9e738f1de471e6bce7ad196acec04b5d16ef",
+      "archive_reorganization_sha256": "ae37180e09289b25dacb78db8b2a9e738f1de471e6bce7ad196acec04b5d16ef",
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "tests/original/test_journal.py",
+      "source_sha256": "91d2380d36c53753ea83058d2d388bccce6ae0157a9fb2da573e4372312b7492",
+      "public_sha256": "91d2380d36c53753ea83058d2d388bccce6ae0157a9fb2da573e4372312b7492",
+      "origin": "reviewed ABC archive and project adaptations",
+      "archive_sha256": "91d2380d36c53753ea83058d2d388bccce6ae0157a9fb2da573e4372312b7492",
+      "archive_reorganization_sha256": "91d2380d36c53753ea83058d2d388bccce6ae0157a9fb2da573e4372312b7492",
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "tests/original/test_notifications.py",
+      "source_sha256": "14bc375a30ac0f1e7ae9a76f88c94b4c25a486ea087c2162da7568e91b156906",
+      "public_sha256": "14bc375a30ac0f1e7ae9a76f88c94b4c25a486ea087c2162da7568e91b156906",
+      "origin": "reviewed ABC archive and project adaptations",
+      "archive_sha256": "14bc375a30ac0f1e7ae9a76f88c94b4c25a486ea087c2162da7568e91b156906",
+      "archive_reorganization_sha256": "14bc375a30ac0f1e7ae9a76f88c94b4c25a486ea087c2162da7568e91b156906",
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "tests/original/test_risk.py",
+      "source_sha256": "1a4738c964159e82f292f27bb7a85c60d983bd2eb5108dac09377ca5ca259156",
+      "public_sha256": "1a4738c964159e82f292f27bb7a85c60d983bd2eb5108dac09377ca5ca259156",
+      "origin": "reviewed ABC archive and project adaptations",
+      "archive_sha256": "1a4738c964159e82f292f27bb7a85c60d983bd2eb5108dac09377ca5ca259156",
+      "archive_reorganization_sha256": "1a4738c964159e82f292f27bb7a85c60d983bd2eb5108dac09377ca5ca259156",
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "tests/phase_c/host_checks.cpp",
+      "source_sha256": "204ee74ebe6f6314102b07a7119c9e2d38b927dc3d45a085a34da6c24725cb9e",
+      "public_sha256": "204ee74ebe6f6314102b07a7119c9e2d38b927dc3d45a085a34da6c24725cb9e",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "tests/phase_c/mt5_host_stubs.hpp",
+      "source_sha256": "afa11021244708c3e392d60f1e855fc9b20ff2181c3c76bc2dfa7a538e75dea1",
+      "public_sha256": "afa11021244708c3e392d60f1e855fc9b20ff2181c3c76bc2dfa7a538e75dea1",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "tests/run_dashboard_demo.py",
+      "source_sha256": "b9a21a750198878d9cded09ea7b08751f5d0b4e32ea9da23d8a14663eb977b99",
+      "public_sha256": "b9a21a750198878d9cded09ea7b08751f5d0b4e32ea9da23d8a14663eb977b99",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "tests/run_engine.py",
+      "source_sha256": "08e61db5be16d9b891d9b555dbd35852eeff51f4145f8d4def0698ae341c8b4b",
+      "public_sha256": "08e61db5be16d9b891d9b555dbd35852eeff51f4145f8d4def0698ae341c8b4b",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "tests/run_phase_a.py",
+      "source_sha256": "6f5ea16e7d2a80d2d5dd01efdea91b12111e4caec3846f26ed2445b9d3f63d16",
+      "public_sha256": "6f5ea16e7d2a80d2d5dd01efdea91b12111e4caec3846f26ed2445b9d3f63d16",
+      "origin": "reviewed ABC archive and project adaptations",
+      "archive_sha256": "4e4fdfb9af6b84ef61cfbb6184a969d4c3cdb732f77c7f44d2433e056a7d8b29",
+      "archive_reorganization_sha256": "6f5ea16e7d2a80d2d5dd01efdea91b12111e4caec3846f26ed2445b9d3f63d16",
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "tests/run_phase_b.py",
+      "source_sha256": "350e628ce1ae658ad6c45c0f83b8f063ae90986dcac9e8c05bca7ecc59919223",
+      "public_sha256": "350e628ce1ae658ad6c45c0f83b8f063ae90986dcac9e8c05bca7ecc59919223",
+      "origin": "reviewed ABC archive and project adaptations",
+      "archive_sha256": "b53a2e2a22f45ef6c687a8822ff221f60c2be024dd4f27c503d224e2b2f54fa0",
+      "archive_reorganization_sha256": "350e628ce1ae658ad6c45c0f83b8f063ae90986dcac9e8c05bca7ecc59919223",
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "tests/run_phase_c_host.py",
+      "source_sha256": "26fd6f47710b89caedc0f292159bcd3e0999f56d5797c1535ee049ef28a8502e",
+      "public_sha256": "26fd6f47710b89caedc0f292159bcd3e0999f56d5797c1535ee049ef28a8502e",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "tests/run_service.py",
+      "source_sha256": "45bf073c28b4dc6d922e2c7f371014ceb8dce596b7f7f23745b9ec2edf067ed8",
+      "public_sha256": "45bf073c28b4dc6d922e2c7f371014ceb8dce596b7f7f23745b9ec2edf067ed8",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "tests/run_shadow_management.py",
+      "source_sha256": "56b891419991e595ad30f6c499db344aac65786db314b82e90cdbce850d34cb8",
+      "public_sha256": "56b891419991e595ad30f6c499db344aac65786db314b82e90cdbce850d34cb8",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "reviewed working-tree addition",
+      "public_transform": "none"
+    },
+    {
+      "path": "tests/run_supervisor.py",
+      "source_sha256": "a7cc22ef58d8631b8ae34e123c67b31e4d3f51597e7671872cdf8a88995d574e",
+      "public_sha256": "a7cc22ef58d8631b8ae34e123c67b31e4d3f51597e7671872cdf8a88995d574e",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "tests/service/__init__.py",
+      "source_sha256": "d362c057719eeedb50d879c964139306a9f794e5fe129c6eb780179589a0b657",
+      "public_sha256": "d362c057719eeedb50d879c964139306a9f794e5fe129c6eb780179589a0b657",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "tests/service/test_offline_html_backfill.py",
+      "source_sha256": "7310f274775fa3010bdd836fb232a995c5e4654133ba3c8e133bcc7af55aa2b3",
+      "public_sha256": "7310f274775fa3010bdd836fb232a995c5e4654133ba3c8e133bcc7af55aa2b3",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "tests/service/test_service.py",
+      "source_sha256": "bf85b5ee5ec8c70df5eb4faf5daaff4c86b72f3eb92ef207ca4c11e6ed865742",
+      "public_sha256": "bf85b5ee5ec8c70df5eb4faf5daaff4c86b72f3eb92ef207ca4c11e6ed865742",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "tracked project file",
+      "public_transform": "none"
+    },
+    {
+      "path": "tools/render_test_dashboard.py",
+      "source_sha256": "84fce646fa7c011f808dc745a0299d6c14b663ce9d5b69ca439582aaaeef2037",
+      "public_sha256": "84fce646fa7c011f808dc745a0299d6c14b663ce9d5b69ca439582aaaeef2037",
+      "origin": "project implementation",
+      "archive_sha256": null,
+      "archive_reorganization_sha256": null,
+      "development_state": "reviewed working-tree addition",
+      "public_transform": "none"
+    }
+  ]
+}

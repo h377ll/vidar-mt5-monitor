@@ -1,0 +1,2 @@
+{"kind":"snapshot","login":"900001","payload":{"captured_utc":1792398791.0523233,"complete":true,"connected":true,"positions":[]},"seq":1,"server":"SYNTHETIC-PHASE-B","source":"synthetic-terminal","stream":"boot-1"}
+{"kind":"transaction","login":"900001","payload":{},"seq":2,"server":"SYNTHETIC-PHASE-B","source":"synthetic-terminal","stream":"boot-1"}

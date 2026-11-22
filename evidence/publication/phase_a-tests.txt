@@ -1,0 +1,57 @@
+49 existing tests; exclusively invented fixtures, no real-source reads.
+Legacy names containing live/manjaro/vps do not denote real input in this run.
+
+test_conflict (test_event_receiver.Events.test_conflict) ... ok
+test_disconnect_not_close (test_event_receiver.Events.test_disconnect_not_close) ... ok
+test_gap_requires_reconciliation (test_event_receiver.Events.test_gap_requires_reconciliation) ... ok
+test_http_spool_restart_and_partial_line (test_event_receiver.Events.test_http_spool_restart_and_partial_line) ... ok
+test_incomplete_snapshot_is_atomic (test_event_receiver.Events.test_incomplete_snapshot_is_atomic) ... ok
+test_nonfinite_json (test_event_receiver.Events.test_nonfinite_json) ... ok
+test_old_snapshot_cannot_close_or_disconnect (test_event_receiver.Events.test_old_snapshot_cannot_close_or_disconnect) ... ok
+test_public_endpoint_rejected (test_event_receiver.Events.test_public_endpoint_rejected) ... ok
+test_removed_sl_and_partial_volume (test_event_receiver.Events.test_removed_sl_and_partial_volume) ... ok
+test_replay_nonce (test_event_receiver.Events.test_replay_nonce) ... ok
+test_stale_auth (test_event_receiver.Events.test_stale_auth) ... ok
+test_store_duplicate_restart (test_event_receiver.Events.test_store_duplicate_restart) ... ok
+test_tamper (test_event_receiver.Events.test_tamper) ... ok
+test_transport_silence (test_event_receiver.Events.test_transport_silence) ... ok
+test_two_sources_one_account_cannot_regress_snapshot (test_event_receiver.Events.test_two_sources_one_account_cannot_regress_snapshot) ... ok
+test_wrong_account (test_event_receiver.Events.test_wrong_account) ... ok
+test_account_switch_during_read_is_atomic (test_journal.JournalTests.test_account_switch_during_read_is_atomic) ... ok
+test_conflicting_duplicate_rejected (test_journal.JournalTests.test_conflicting_duplicate_rejected) ... ok
+test_correction_retains_revision (test_journal.JournalTests.test_correction_retains_revision) ... ok
+test_crash_recovery_not_resend (test_journal.JournalTests.test_crash_recovery_not_resend) ... ok
+test_disconnection_keeps_last_verified_snapshot (test_journal.JournalTests.test_disconnection_keeps_last_verified_snapshot) ... ok
+test_drawdown_ignores_deposit_and_preserves_entry_commission (test_journal.JournalTests.test_drawdown_ignores_deposit_and_preserves_entry_commission) ... ok
+test_historical_outbox_not_pending (test_journal.JournalTests.test_historical_outbox_not_pending) ... ok
+test_idempotent_import (test_journal.JournalTests.test_idempotent_import) ... ok
+test_incomplete_response_rejected (test_journal.JournalTests.test_incomplete_response_rejected) ... ok
+test_live_sample_and_balance (test_journal.JournalTests.test_live_sample_and_balance) ... ok
+test_missing_link_rejected (test_journal.JournalTests.test_missing_link_rejected) ... ok
+test_omitted_costs_not_zero (test_journal.JournalTests.test_omitted_costs_not_zero) ... ok
+test_partial_close_and_multiple_entries (test_journal.JournalTests.test_partial_close_and_multiple_entries) ... ok
+test_pathlike_identifier_rejected (test_journal.JournalTests.test_pathlike_identifier_rejected) ... ok
+test_price_only_not_trade_event_and_sl_change_is (test_journal.JournalTests.test_price_only_not_trade_event_and_sl_change_is) ... ok
+test_reversal_not_silently_partial (test_journal.JournalTests.test_reversal_not_silently_partial) ... ok
+test_same_timestamp_dd_not_invented_order (test_journal.JournalTests.test_same_timestamp_dd_not_invented_order) ... ok
+test_two_connectors_same_account (test_journal.JournalTests.test_two_connectors_same_account) ... ok
+test_vps_swap_alias_reconciles (test_journal.JournalTests.test_vps_swap_alias_reconciles) ... ok
+test_clock_backwards_holds (test_notifications.NotificationsTests.test_clock_backwards_holds) ... ok
+test_expired_does_not_send (test_notifications.NotificationsTests.test_expired_does_not_send) ... ok
+test_known_failure_distinct (test_notifications.NotificationsTests.test_known_failure_distinct) ... ok
+test_lost_receipt_uncertain (test_notifications.NotificationsTests.test_lost_receipt_uncertain) ... ok
+test_receipt_and_duplicate_suppression (test_notifications.NotificationsTests.test_receipt_and_duplicate_suppression) ... ok
+test_correlation_unknown (test_risk.RiskTests.test_correlation_unknown) ... ok
+test_missing_member_not_zero (test_risk.RiskTests.test_missing_member_not_zero) ... ok
+test_missing_stop (test_risk.RiskTests.test_missing_stop) ... ok
+test_sell_stop (test_risk.RiskTests.test_sell_stop) ... ok
+test_static (test_risk.RiskTests.test_static) ... ok
+test_trailing_reference_required (test_risk.RiskTests.test_trailing_reference_required) ... ok
+test_trailing_reference_type_not_interchangeable (test_risk.RiskTests.test_trailing_reference_type_not_interchangeable) ... ok
+test_unknown_contract (test_risk.RiskTests.test_unknown_contract) ... ok
+test_unknown_cost_spec (test_risk.RiskTests.test_unknown_cost_spec) ... ok
+
+----------------------------------------------------------------------
+Ran 49 tests in 0.577s
+
+OK

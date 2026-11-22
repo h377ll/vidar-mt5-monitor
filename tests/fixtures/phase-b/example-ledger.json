@@ -1,0 +1,136 @@
+{
+  "ingress": [
+    {
+      "source": "synthetic-terminal",
+      "stream": "boot-1",
+      "seq": 1,
+      "hash": "aa631f9419fe8b76d2e62dd77aab939a381bc1513ee3218eff2d358adc22b03c",
+      "body": "{\"kind\":\"snapshot\",\"login\":\"900001\",\"payload\":{\"captured_utc\":1792398791.0523233,\"complete\":true,\"connected\":true,\"positions\":[]},\"seq\":1,\"server\":\"SYNTHETIC-PHASE-B\",\"source\":\"synthetic-terminal\",\"stream\":\"boot-1\"}",
+      "received": 1792398791.1948752
+    },
+    {
+      "source": "synthetic-terminal",
+      "stream": "boot-1",
+      "seq": 2,
+      "hash": "727e5224578865ce6755b3b773d0b403b8bbbbc8c299cfcb93ae58f75b1e207f",
+      "body": "{\"kind\":\"transaction\",\"login\":\"900001\",\"payload\":{},\"seq\":2,\"server\":\"SYNTHETIC-PHASE-B\",\"source\":\"synthetic-terminal\",\"stream\":\"boot-1\"}",
+      "received": 1792398791.35152
+    }
+  ],
+  "processed": [
+    {
+      "source": "synthetic-terminal",
+      "stream": "boot-1",
+      "seq": 1,
+      "result": "{\"bundle_hash\":\"80009e9bf109311605da51e63187054ddd293f4546f0b9ef403772793dae9437\",\"captured_utc\":1792398791.0523233,\"connected\":true,\"result\":{\"account_key\":\"[\\\"SYNTHETIC-PHASE-B\\\",\\\"900001\\\"]\",\"aggregate_matches\":true,\"all_available_positions_selected\":true,\"balance\":1000,\"balance_difference\":0.0,\"changed_records\":1,\"closed_available\":0,\"closed_imported\":0,\"coverage\":\"available_history_not_broker_statement\",\"deal_count\":1,\"order_count\":0,\"reported_total_including_cashflows\":1000.0,\"source\":\"synthetic-terminal\",\"source_window\":[\"2026-01-01\",\"2026-12-31\"],\"unknown_timezone\":true}}"
+    },
+    {
+      "source": "synthetic-terminal",
+      "stream": "boot-1",
+      "seq": 2,
+      "result": "{\"bundle_hash\":\"19d08d8c7a98f29753cd2a358cfb1c07f5fad07d1006b7fb6cbc34a2c981bbef\",\"captured_utc\":1792398792.0523233,\"connected\":true,\"result\":{\"account_key\":\"[\\\"SYNTHETIC-PHASE-B\\\",\\\"900001\\\"]\",\"aggregate_matches\":true,\"all_available_positions_selected\":true,\"balance\":1000,\"balance_difference\":0.0,\"changed_records\":3,\"closed_available\":1,\"closed_imported\":0,\"coverage\":\"available_history_not_broker_statement\",\"deal_count\":2,\"order_count\":1,\"reported_total_including_cashflows\":1000.0,\"source\":\"synthetic-terminal\",\"source_window\":[\"2026-01-01\",\"2026-12-31\"],\"unknown_timezone\":true}}"
+    }
+  ],
+  "accounts": [
+    {
+      "key": "[\"SYNTHETIC-PHASE-B\",\"900001\"]",
+      "data": "{\"balance\":1000,\"broker\":\"Fictional\",\"currency\":\"USD\",\"equity\":1000,\"import_result\":{\"account_key\":\"[\\\"SYNTHETIC-PHASE-B\\\",\\\"900001\\\"]\",\"aggregate_matches\":true,\"all_available_positions_selected\":true,\"balance\":1000,\"balance_difference\":0.0,\"closed_available\":1,\"closed_imported\":0,\"coverage\":\"available_history_not_broker_statement\",\"deal_count\":2,\"order_count\":1,\"reported_total_including_cashflows\":1000.0,\"source\":\"synthetic-terminal\",\"source_window\":[\"2026-01-01\",\"2026-12-31\"],\"unknown_timezone\":true},\"login\":\"900001\",\"margin_free\":1000,\"margin_mode\":\"hedging\",\"observed_at\":\"2026-10-19T08:33:12.052323+00:00\",\"profit\":0,\"server\":\"SYNTHETIC-PHASE-B\",\"type\":\"demo\"}"
+    }
+  ],
+  "records": [
+    {
+      "account_key": "[\"SYNTHETIC-PHASE-B\",\"900001\"]",
+      "kind": "deal",
+      "id": "1",
+      "data": "{\"action\":\"balance\",\"commission\":0,\"deal_id\":\"1\",\"fees\":0,\"open_time\":\"2026-01-01T00:00:00\",\"profit\":1000,\"swap\":0}"
+    },
+    {
+      "account_key": "[\"SYNTHETIC-PHASE-B\",\"900001\"]",
+      "kind": "deal",
+      "id": "2",
+      "data": "{\"action\":\"buy\",\"commission\":0,\"deal_id\":\"2\",\"entry\":\"in\",\"fees\":0,\"open_time\":\"2026-02-01T00:00:02\",\"order_id\":\"2\",\"position_id\":\"101\",\"price_open\":1.1,\"profit\":0,\"swap\":0,\"symbol\":\"SYNTHUSD\",\"volume\":1}"
+    },
+    {
+      "account_key": "[\"SYNTHETIC-PHASE-B\",\"900001\"]",
+      "kind": "order",
+      "id": "2",
+      "data": "{\"order_id\":\"2\",\"position_id\":\"101\",\"state\":\"filled\",\"symbol\":\"SYNTHUSD\"}"
+    },
+    {
+      "account_key": "[\"SYNTHETIC-PHASE-B\",\"900001\"]",
+      "kind": "position",
+      "id": "101",
+      "data": "{\"closed_at_source\":null,\"closed_at_utc\":null,\"direction\":\"buy\",\"entry_price\":1.1,\"entry_volume\":1.0,\"executions\":[{\"action\":\"buy\",\"commission\":0,\"costs\":{\"commission\":0,\"fees\":0,\"profit\":0,\"swap\":0},\"deal_id\":\"2\",\"entry\":\"in\",\"execution_price\":1.1,\"fees\":0,\"open_time\":\"2026-02-01T00:00:02\",\"order_id\":\"2\",\"position_id\":\"101\",\"price_open\":1.1,\"profit\":0,\"swap\":0,\"symbol\":\"SYNTHUSD\",\"volume\":1}],\"exit_price\":null,\"exit_volume\":0.0,\"initial_sl\":null,\"initial_tp\":null,\"issues\":[],\"missing_cost_fields\":[],\"net_from_reported_components\":0.0,\"net_pnl\":0.0,\"opened_at_source\":\"2026-02-01T00:00:02\",\"opened_at_utc\":null,\"partial_closes\":[],\"position_id\":\"101\",\"remaining_volume\":1.0,\"reported_components\":{\"commission\":0.0,\"fees\":0.0,\"profit\":0.0,\"swap\":0.0},\"session\":null,\"sl_reported\":null,\"source_timezone\":null,\"status\":\"open\",\"symbol\":\"SYNTHUSD\",\"tp_reported\":null}"
+    }
+  ],
+  "events": [
+    {
+      "id": "eb796004dfd1ae49521c7cf25d6392985f7b2a7c2b3f02d54e2f14f38ba26c42",
+      "account_key": "[\"SYNTHETIC-PHASE-B\",\"900001\"]",
+      "kind": "deal_observed",
+      "observed_at": "2026-10-19T08:33:11.052323+00:00",
+      "payload": "{\"action\":\"balance\",\"commission\":0,\"deal_id\":\"1\",\"fees\":0,\"open_time\":\"2026-01-01T00:00:00\",\"profit\":1000,\"swap\":0}"
+    },
+    {
+      "id": "7f1932c18f769545b86dbdeb533cb2a9e0ca2769f2361427f25d99b815e65872",
+      "account_key": "[\"SYNTHETIC-PHASE-B\",\"900001\"]",
+      "kind": "deal_observed",
+      "observed_at": "2026-10-19T08:33:12.052323+00:00",
+      "payload": "{\"action\":\"buy\",\"commission\":0,\"deal_id\":\"2\",\"entry\":\"in\",\"fees\":0,\"open_time\":\"2026-02-01T00:00:02\",\"order_id\":\"2\",\"position_id\":\"101\",\"price_open\":1.1,\"profit\":0,\"swap\":0,\"symbol\":\"SYNTHUSD\",\"volume\":1}"
+    },
+    {
+      "id": "755dfbe1d60954ee5f548584dae43cd4e261aa2b46dcc3e5097d369a333f9b36",
+      "account_key": "[\"SYNTHETIC-PHASE-B\",\"900001\"]",
+      "kind": "position_first_observed",
+      "observed_at": "2026-10-19T08:33:12.052323+00:00",
+      "payload": "{\"after\":{\"id\":\"101\",\"sl\":1,\"symbol\":\"SYNTHUSD\",\"tp\":2,\"type\":\"buy\",\"volume\":1},\"before\":null,\"time_is_detection\":true}"
+    }
+  ],
+  "outbox": [
+    {
+      "event_id": "eb796004dfd1ae49521c7cf25d6392985f7b2a7c2b3f02d54e2f14f38ba26c42",
+      "state": "historical",
+      "attempts": 0,
+      "receipt": null
+    },
+    {
+      "event_id": "7f1932c18f769545b86dbdeb533cb2a9e0ca2769f2361427f25d99b815e65872",
+      "state": "delivered",
+      "attempts": 1,
+      "receipt": "{\"provider_message_id\": \"SIMULATED-7f1932c18f769545b86dbdeb533cb2a9e0ca2769f2361427f25d99b815e65872\", \"simulated\": true}"
+    },
+    {
+      "event_id": "755dfbe1d60954ee5f548584dae43cd4e261aa2b46dcc3e5097d369a333f9b36",
+      "state": "delivered",
+      "attempts": 1,
+      "receipt": "{\"provider_message_id\": \"SIMULATED-755dfbe1d60954ee5f548584dae43cd4e261aa2b46dcc3e5097d369a333f9b36\", \"simulated\": true}"
+    }
+  ],
+  "coverage": [
+    {
+      "source": "synthetic-terminal",
+      "account_key": "[\"SYNTHETIC-PHASE-B\",\"900001\"]",
+      "last_seen": 1792398791.35152,
+      "connected": 1,
+      "needs_reconciliation": 0,
+      "last_snapshot": 1792398792.0523233,
+      "last_snapshot_stream": "boot-1",
+      "last_snapshot_seq": 2,
+      "last_state_capture": 1792398792.0523233
+    }
+  ],
+  "simulated_receipts": [
+    {
+      "event_id": "755dfbe1d60954ee5f548584dae43cd4e261aa2b46dcc3e5097d369a333f9b36",
+      "message": "[SIMULACI\u00d3N SIN ENV\u00cdO]\n[Trading Stack \u00b7 detecci\u00f3n] Posici\u00f3n observada\nCuenta/fuente: SYNTHETIC-PHASE-B / \u20260001\n\nObservado: 2026-10-19T08:33:12.052323+00:00\nID: 755dfbe1d609",
+      "receipt": "{\"provider_message_id\":\"SIMULATED-755dfbe1d60954ee5f548584dae43cd4e261aa2b46dcc3e5097d369a333f9b36\",\"simulated\":true}",
+      "accepted_at": "2026-10-19T08:33:12.052323+00:00"
+    },
+    {
+      "event_id": "7f1932c18f769545b86dbdeb533cb2a9e0ca2769f2361427f25d99b815e65872",
+      "message": "[SIMULACI\u00d3N SIN ENV\u00cdO]\n[Trading Stack \u00b7 detecci\u00f3n] Ejecuci\u00f3n MT5 observada\nCuenta/fuente: SYNTHETIC-PHASE-B / \u20260001\nSYNTHUSD\nObservado: 2026-10-19T08:33:12.052323+00:00\nID: 7f1932c18f76",
+      "receipt": "{\"provider_message_id\":\"SIMULATED-7f1932c18f769545b86dbdeb533cb2a9e0ca2769f2361427f25d99b815e65872\",\"simulated\":true}",
+      "accepted_at": "2026-10-19T08:33:12.052323+00:00"
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "schema_version": "vidar.mt5.mcp-read-fixture.v1",
+  "captured_at_utc": "2026-11-04T18:45:00Z",
+  "history_window": {
+    "from_server_raw": "2026-11-04T08:00:00",
+    "to_server_raw": "2026-11-04T11:00:00",
+    "limit": 100
+  },
+  "calls": [
+    {
+      "tool": "get_workspace_info",
+      "arguments": {},
+      "response": {
+        "workspace": "SYNTHETIC-MCP-FIXTURE",
+        "terminal_build": 6230
+      }
+    },
+    {
+      "tool": "get_time_information",
+      "arguments": {},
+      "response": {
+        "utc_time": "2026-11-04T18:45:00Z",
+        "local_time": "2026-11-04T15:45:00",
+        "trade_server_time": "2026-11-04T21:45:00",
+        "local_utc_offset_minutes": 0
+      }
+    },
+    {
+      "tool": "get_trading_account_info",
+      "phase": "before",
+      "arguments": {},
+      "response": {
+        "account": {
+          "server": "SYNTHETIC-MCP",
+          "login": "990001",
+          "trade_mode": "real",
+          "currency": "USD"
+        },
+        "terminal": {
+          "server_connected": true,
+          "build": 6230,
+          "experts_trade_allowed": false,
+          "mcp_trade_allowed": false
+        }
+      }
+    },
+    {
+      "tool": "get_trading_open_positions",
+      "arguments": {
+        "include_orders": true
+      },
+      "response": {
+        "complete": true,
+        "positions": [
+          {
+            "position_id": "9201",
+            "symbol": "SYNUSD",
+            "side": "buy",
+            "volume": "0.25",
+            "price_open": "1.2000",
+            "current_price": "1.2010",
+            "sl": "1.1900",
+            "tp": "1.2200",
+            "opened_at_server_raw": "2026-11-04T10:30:00"
+          }
+        ],
+        "orders": []
+      }
+    },
+    {
+      "tool": "get_trading_history_orders",
+      "arguments": {
+        "datetime_from": "2026-11-04T08:00:00",
+        "datetime_to": "2026-11-04T11:00:00",
+        "include_orders": true,
+        "include_deals": true,
+        "include_orders_canceled": true,
+        "limit": 100
+      },
+      "response": {
+        "orders": [
+          {
+            "order_id": "2001",
+            "position_id": "9101",
+            "symbol": "SYNUSD",
+            "state": "filled"
+          },
+          {
+            "order_id": "2002",
+            "position_id": "9101",
+            "symbol": "SYNUSD",
+            "state": "filled"
+          },
+          {
+            "order_id": "2003",
+            "position_id": "9101",
+            "symbol": "SYNUSD",
+            "state": "filled"
+          }
+        ],
+        "deals": [
+          {
+            "deal_id": "3001",
+            "order_id": "2001",
+            "position_id": "9101",
+            "symbol": "SYNUSD",
+            "entry": "in",
+            "side": "buy",
+            "volume": "1.00",
+            "price": "1.1000",
+            "time_server_raw": "2026-11-04T08:15:00",
+            "profit": "0",
+            "commission": null,
+            "swap": "0",
+            "fee": null
+          },
+          {
+            "deal_id": "3002",
+            "order_id": "2002",
+            "position_id": "9101",
+            "symbol": "SYNUSD",
+            "entry": "out",
+            "side": "sell",
+            "volume": "0.40",
+            "price": "1.1050",
+            "time_server_raw": "2026-11-04T09:00:00",
+            "profit": "20",
+            "commission": null,
+            "swap": "0",
+            "fee": null
+          },
+          {
+            "deal_id": "3003",
+            "order_id": "2003",
+            "position_id": "9101",
+            "symbol": "SYNUSD",
+            "entry": "out",
+            "side": "sell",
+            "volume": "0.60",
+            "price": "1.1100",
+            "time_server_raw": "2026-11-04T10:00:00",
+            "profit": "60",
+            "commission": null,
+            "swap": "0",
+            "fee": null
+          }
+        ]
+      }
+    },
+    {
+      "tool": "get_trading_history_positions",
+      "arguments": {
+        "datetime_from": "2026-11-04T08:00:00",
+        "datetime_to": "2026-11-04T11:00:00",
+        "limit": 100
+      },
+      "response": {
+        "positions": [
+          {
+            "position_id": "9101",
+            "symbol": "SYNUSD",
+            "side": "buy",
+            "open_volume": "1.00",
+            "close_volume": "1.00",
+            "opened_at_server_raw": "2026-11-04T08:15:00",
+            "closed_at_server_raw": "2026-11-04T10:00:00"
+          }
+        ]
+      }
+    },
+    {
+      "tool": "get_marketwatch_symbols",
+      "arguments": {},
+      "response": {
+        "symbols": [
+          {
+            "symbol": "SYNUSD",
+            "tick_size": "0.0001",
+            "tick_value": "10",
+            "currency_profit": "USD"
+          }
+        ]
+      }
+    },
+    {
+      "tool": "get_trading_account_info",
+      "phase": "after",
+      "arguments": {},
+      "response": {
+        "account": {
+          "server": "SYNTHETIC-MCP",
+          "login": "990001",
+          "trade_mode": "real",
+          "currency": "USD"
+        },
+        "terminal": {
+          "server_connected": true,
+          "build": 6230,
+          "experts_trade_allowed": false,
+          "mcp_trade_allowed": false
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+test_01_complete_spool_to_simulated_receipt (__main__.Pipeline.test_01_complete_spool_to_simulated_receipt) ... ok
+test_02_receiver_dies_after_commit_before_ack (__main__.Pipeline.test_02_receiver_dies_after_commit_before_ack) ... ok
+test_03_worker_dies_before_atomic_commit (__main__.Pipeline.test_03_worker_dies_before_atomic_commit) ... ok
+test_04_worker_dies_after_commit_and_restarts (__main__.Pipeline.test_04_worker_dies_after_commit_and_restarts) ... ok
+test_05_notifier_dies_before_provider_acceptance (__main__.Pipeline.test_05_notifier_dies_before_provider_acceptance) ... ok
+test_06_notifier_dies_after_acceptance_before_receipt_commit (__main__.Pipeline.test_06_notifier_dies_after_acceptance_before_receipt_commit) ... ok
+test_07_cursor_lost_replay_has_no_duplicate_effects (__main__.Pipeline.test_07_cursor_lost_replay_has_no_duplicate_effects) ... ok
+test_08_disconnect_does_not_fabricate_close_and_recovers (__main__.Pipeline.test_08_disconnect_does_not_fabricate_close_and_recovers) ... ok
+test_09_unavailable_authority_queue_recovery (__main__.Pipeline.test_09_unavailable_authority_queue_recovery) ... ok
+test_10_stale_and_future_authority_preserve_last_snapshot (__main__.Pipeline.test_10_stale_and_future_authority_preserve_last_snapshot) ... ok
+test_11_silence_is_stale_deduplicated_then_restored (__main__.Pipeline.test_11_silence_is_stale_deduplicated_then_restored) ... ok
+test_12_account_change_rejected_without_explicit_pin (__main__.Pipeline.test_12_account_change_rejected_without_explicit_pin) ... ok
+test_13_explicit_synthetic_repin_separates_accounts (__main__.Pipeline.test_13_explicit_synthetic_repin_separates_accounts) ... ok
+test_14_account_changes_during_authority_read (__main__.Pipeline.test_14_account_changes_during_authority_read) ... ok
+test_15_sequence_gap_and_overflow_reconcile_full_history (__main__.Pipeline.test_15_sequence_gap_and_overflow_reconcile_full_history) ... ok
+test_16_partial_line_is_not_acknowledged_until_complete (__main__.Pipeline.test_16_partial_line_is_not_acknowledged_until_complete) ... ok
+test_17_spool_corruption_retains_cursor_for_manual_recovery (__main__.Pipeline.test_17_spool_corruption_retains_cursor_for_manual_recovery) ... ok
+test_18_spool_truncation_and_rotation_fail_closed (__main__.Pipeline.test_18_spool_truncation_and_rotation_fail_closed) ... ok
+test_19_hmac_nonce_and_expired_auth_rejected (__main__.Pipeline.test_19_hmac_nonce_and_expired_auth_rejected) ... ok
+test_20_same_sequence_different_content_is_rejected (__main__.Pipeline.test_20_same_sequence_different_content_is_rejected) ... ok
+test_21_partial_history_and_balance_mismatch_roll_back (__main__.Pipeline.test_21_partial_history_and_balance_mismatch_roll_back) ... ok
+test_22_new_stream_reuses_history_without_duplicate_trade (__main__.Pipeline.test_22_new_stream_reuses_history_without_duplicate_trade) ... ok
+test_23_transport_outage_and_bounded_backlog_recovery (__main__.Pipeline.test_23_transport_outage_and_bounded_backlog_recovery) ... ok
+test_24_expired_queue_and_backward_clock_never_send (__main__.Pipeline.test_24_expired_queue_and_backward_clock_never_send) ... ok
+test_25_definite_failure_is_not_uncertain_or_delivered (__main__.Pipeline.test_25_definite_failure_is_not_uncertain_or_delivered) ... ok
+test_26_worker_lock_excludes_second_owner (__main__.Pipeline.test_26_worker_lock_excludes_second_owner) ... ok
+test_27_partial_close_and_full_close_are_history_backed (__main__.Pipeline.test_27_partial_close_and_full_close_are_history_backed) ... ok
+test_28_historical_initial_import_does_not_alert_as_new (__main__.Pipeline.test_28_historical_initial_import_does_not_alert_as_new) ... ok
+test_29_older_authority_cannot_regress_even_if_fresh (__main__.Pipeline.test_29_older_authority_cannot_regress_even_if_fresh) ... ok
+test_30_incomplete_snapshot_is_atomic_at_ingress (__main__.Pipeline.test_30_incomplete_snapshot_is_atomic_at_ingress) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 12.168s
+
+OK

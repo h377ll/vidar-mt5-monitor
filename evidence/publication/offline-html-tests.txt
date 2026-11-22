@@ -1,0 +1,8 @@
+test_replay_is_idempotent_and_historical (tests.service.test_offline_html_backfill.OfflineHtmlBackfillTests.test_replay_is_idempotent_and_historical) ... ok
+test_test_vault_marker_is_mandatory (tests.service.test_offline_html_backfill.OfflineHtmlBackfillTests.test_test_vault_marker_is_mandatory) ... ok
+test_unreported_costs_remain_unknown (tests.service.test_offline_html_backfill.OfflineHtmlBackfillTests.test_unreported_costs_remain_unknown) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.016s
+
+OK

@@ -7,7 +7,9 @@ SECURITY.md
 SHA256SUMS
 THIRD_PARTY.md
 VERSION
+docs/PRESENTATION.md
 docs/PROVENANCE.md
+docs/README.md
 docs/VALIDATION.md
 docs/phase-c/OBSERVERS.md
 docs/provenance/source-files.json

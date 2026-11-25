@@ -15,6 +15,7 @@ provenance.
 | Audit source lineage | [Provenance](PROVENANCE.md), [per-file hashes](provenance/source-files.json), [inventory](../FILES.txt) and [manifest](../SHA256SUMS) |
 | Evaluate reuse | [Rights](../README.md#rights-attribution-and-reuse) and [third-party dependencies](../THIRD_PARTY.md) |
 | Explore the synthetic dashboard | [Harness](../tests/run_dashboard_demo.py), [projection](../src/engine/dashboard.py) and [manual renderer](../tools/render_test_dashboard.py) |
+| Diagnose observer initialization under Wine/Bottles | [Runtime paths, initialization reasons and transport boundaries](phase-c/WINE-BOTTLES-RUNTIME-2026-11-25.md) |
 
 See the [presentation update record](PRESENTATION.md) for the documentation-only scope and manifest boundaries.
 

@@ -12,6 +12,7 @@ docs/PROVENANCE.md
 docs/README.md
 docs/VALIDATION.md
 docs/phase-c/OBSERVERS.md
+docs/phase-c/WINE-BOTTLES-RUNTIME-2026-11-25.md
 docs/provenance/source-files.json
 ea/VidarObserverDemo.mq5
 ea/phase_c/VidarObserverDemoC.mq5
